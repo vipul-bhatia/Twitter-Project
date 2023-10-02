@@ -33,26 +33,27 @@ window.addEventListener('scroll', changeColor)
     {!user && (
 					<>
 						<li>
-							<Link to="/login">Login</Link>
+            <Link to="/login" onClick={() => setClick(false)}>Login</Link>
 						</li>
 						<li>
-							<Link to="/signup">Signup</Link>
+            <Link to="/signup" onClick={() => setClick(false)}>Signup</Link>
 						</li>
 					</>
 				)}
         {user && (
 					<>
             <li>
-        <Link to='/'>Home</Link>
+            <Link to='/' onClick={() => setClick(false)}>Home</Link>
       </li>
       <li>
-        <Link to='/project'>Project</Link>
+      <Link to='/project' onClick={() => setClick(false)}>Project</Link>
       </li>
       <li>
-        <Link to='/about'>About</Link>
+      <Link to='/about' onClick={() => setClick(false)}>About</Link>
       </li>
       <li>
-        <Link to='/contact'>Contact</Link>
+      <Link to='/contact' onClick={() => setClick(false)}>Contact</Link>
+
       </li>
 						<li>
 							<button className="btn-logout" onClick={logout}>

@@ -13,7 +13,7 @@ const WorkCardData = [
         imgsrc: pro2,
         title: 'The Risks of Using Social Media for Crisis Communication',
         text: 'Crisis events come in all shapes and sizes and will have varying degrees of impact on businesses and their workforces. In some cases, the effect of a crisis will be localised, while in others it will affect an entire organisation. For example, a cyber-attack might impact a whole organisation, whereas a weather event or terror-attack will only endanger people within a certain geographical region.',
-        view: 'https://fast.com/'
+        view: 'https://www.oecd.org/gov/risk/social-media-in-risk-and-crisis-communication.htm'
     },
     {
         imgsrc: pro3,

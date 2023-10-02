@@ -5,11 +5,17 @@
     overflow: hidden; /* Ensure that image doesn't overflow the mask */
 }
 
-.intro-img {
-    width: 100%;
-    min-height: 100vh;  /* Minimum height set to viewport height */
-    object-fit: cover;
-    object-position: center;
+.intro-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    
+    
+}
+
+.btn-small {
+    font-size: 0.8rem; /* Adjust as needed */
 }
 
 .mask::after {
@@ -19,13 +25,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Adding opacity directly to the background color */
+    background-color: rgba(0, 0, 0, 0.6); /* Adding opacity directly to the background color */
 }
 
 .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh; 
     width: 100%;
-    position: relative; 
+    position: relative;
 }
 
 .hero .content {
@@ -41,7 +50,7 @@
 }
 
 
-.hero .content h1{
+.hero .content h1 h2{
     font-size: 4rem;
     padding: 0.6rem 0 1.5rem;
 }
@@ -60,7 +69,7 @@
  }
 
  @media screen and (max-width: 640px){
-    .hero .content h1{
+    .hero .content h1 h2{
         font-size: 3rem;
     }
     .hero .content p{

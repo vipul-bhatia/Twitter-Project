@@ -8,7 +8,8 @@ const PricingCard = () => {
   const [tweets, setTweets] = useState([]);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/fetch_${selectedCategory}/`)
+    
+    fetch(`https://twiiterdataapi.onrender.com/fetch_${selectedCategory}/`)
       .then(response => response.json())
       .then(data => {
         setTweets(data);

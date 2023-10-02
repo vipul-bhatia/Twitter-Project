@@ -26,11 +26,11 @@ export default function Signup() {
             <form onSubmit={handleSubmit}>
                 <h1>Sign Up</h1>
                 <div className='input-box'>
-                    <input type='text' placeholder='Email' required onChange={(e)=> setEmail(e.target.value)} value = {email}/>
+                    <input type='email' placeholder='Email' required onChange={(e)=> setEmail(e.target.value)} value = {email}/>
                     <i className='bx bxs-user'></i>
                 </div>
                 <div className='input-box'>
-                    <input type='text' placeholder='Password' required onChange={(e)=> setPassword(e.target.value)} value = {password}/>
+                    <input type='password' placeholder='Password' required onChange={(e)=> setPassword(e.target.value)} value = {password}/>
                     <i className='bx bxs-lock-alt'></i>
                 </div>
                 <div className='input-box'>
